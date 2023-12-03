@@ -37,7 +37,7 @@ result1
         </div>`;
          document.body.append(div);
     }
-}) ;
+});
 function getWeatherData(restCountryName) {
 // Use restCountryName in your fetch request to get weather data.
     var apiKey = "3fc14d7d508443eb021ddebb2e677319";
@@ -50,10 +50,10 @@ function getWeatherData(restCountryName) {
   
         if (weatherCountryName === restCountryName) {
           alert(
-            `Weather in ${weatherData.name}: ${weatherData.main.temp_min} min:deg&c && ${weatherData.main.temp_max} max:deg&c`
+            `Weather in ${weatherData.name}: ${weatherData.main.temp_min}°C`
           );
         } else {
-          alert("Country names do not match.");
+          alert("Country names do not match");
         }
       })
       .catch((error) => {
