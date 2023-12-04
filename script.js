@@ -1,5 +1,4 @@
 
-
 //print the country names from restcountries:
 const url = "https://restcountries.com/v3.1/all";
 const result = fetch(url);
